@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+
+    <!-- Folder aplikasi eksternal (PALING AMAN) -->
+    <external-files-path
+        name="external_files"
+        path="." />
+
+    <!-- Khusus folder Pictures -->
+    <external-files-path
+        name="images"
+        path="Pictures/" />
+
+</paths>
