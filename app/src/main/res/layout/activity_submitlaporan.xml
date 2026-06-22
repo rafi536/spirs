@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1F3C88">
+
+    <!-- BACK BUTTON -->
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_margin="24dp"
+        android:src="@drawable/navigation"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:scaleType="fitCenter"
+        android:contentDescription="Back" />
+
+    <!-- CARD -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="24dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="8dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+                <!-- TITLE -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Konfirmasi Laporan"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:textSize="18sp" />
+
+                <!-- JUDUL -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Judul :"
+                    android:layout_marginTop="16dp"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/etJudul"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@android:drawable/editbox_background"
+                    android:enabled="false"
+                    android:textColor="#000000"
+                    android:padding="8dp" />
+
+                <!-- LOKASI -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lokasi :"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/etLokasi"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@android:drawable/editbox_background"
+                    android:enabled="false"
+                    android:textColor="#000000"
+                    android:padding="8dp" />
+
+                <!-- DESKRIPSI -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Deskripsi :"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/etDeskripsi"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:gravity="top"
+                    android:background="@android:drawable/editbox_background"
+                    android:enabled="false"
+                    android:textColor="#000000"
+                    android:padding="8dp" />
+
+                <!-- KOORDINAT -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Koordinat :"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/etKoordinat"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@android:drawable/editbox_background"
+                    android:enabled="false"
+                    android:textColor="#000000"
+                    android:padding="8dp" />
+
+                <!-- FOTO STATUS -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Foto :"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/tvFotoStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Foto sudah di upload"
+                    android:textColor="#4CAF50"
+                    android:textStyle="bold" />
+
+                <!-- BUTTON -->
+                <Button
+                    android:id="@+id/btnNext"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="24dp"
+                    android:text="SUBMIT LAPORAN"
+                    android:textStyle="bold"
+                    android:backgroundTint="#2962FF"
+                    android:textColor="#FFFFFF"
+                    app:cornerRadius="15dp" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
