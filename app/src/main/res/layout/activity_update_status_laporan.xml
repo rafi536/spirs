@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1F3C88">
+
+    <!-- CARD -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardUpdateStatus"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="24dp"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="#F0F0F0">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp">
+
+            <!-- SCROLL -->
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/btnSimpan"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- HEADER -->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageButton
+                            android:id="@+id/btnBack"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:src="@drawable/navigation"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:contentDescription="Back" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="UPDATE STATUS LAPORAN"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:textColor="#000000"
+                            android:layout_centerInParent="true"/>
+                    </RelativeLayout>
+
+                    <!-- CONTENT CARD -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        app:cardCornerRadius="12dp"
+                        app:cardElevation="4dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+
+                            <!-- TITLE -->
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="UPDATE STATUS LAPORAN"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:layout_marginBottom="16dp"
+                                android:textColor="#000000"/>
+
+                            <!-- NAMA -->
+                            <TextView
+                                android:id="@+id/tvNamaLaporan"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:text="Nama Laporan"
+                                android:background="@drawable/input_bg"
+                                android:gravity="center_vertical"
+                                android:paddingStart="12dp"
+                                android:textColor="#000000"/>
+
+                            <!-- ID -->
+                            <TextView
+                                android:id="@+id/tvIdLaporan"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="8dp"
+                                android:text="ID Laporan"
+                                android:background="@drawable/input_bg"
+                                android:gravity="center_vertical"
+                                android:paddingStart="12dp"
+                                android:textColor="#000000"/>
+
+                            <!-- TANGGAL -->
+                            <TextView
+                                android:id="@+id/tvTanggal"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="8dp"
+                                android:text="Tanggal"
+                                android:background="@drawable/input_bg"
+                                android:gravity="center_vertical"
+                                android:paddingStart="12dp"
+                                android:textColor="#000000"/>
+
+                            <!-- LIHAT FOTO -->
+                            <ImageButton
+                                android:id="@+id/btnLihatFoto"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="12dp"
+                                android:backgroundTint="#4CAF50"
+                                android:src="@android:drawable/ic_menu_view"
+                                android:contentDescription="Lihat Foto" />
+
+                            <!-- STATUS -->
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="STATUS TIMELINE"
+                                android:textStyle="bold"
+                                android:layout_marginTop="16dp"
+                                android:textColor="#000000"/>
+
+                            <TextView
+                                android:id="@+id/tvStatusSaat"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="8dp"
+                                android:text="Status Saat Ini"
+                                android:background="@drawable/input_bg"
+                                android:gravity="center_vertical"
+                                android:paddingStart="12dp"
+                                android:textColor="#000000"/>
+
+                            <!-- PILIH STATUS -->
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Pilih Status Baru"
+                                android:textStyle="bold"
+                                android:layout_marginTop="12dp"
+                                android:textColor="#000000"/>
+
+                            <Spinner
+                                android:id="@+id/spStatus"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="8dp"/>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+            <!-- BUTTON SIMPAN -->
+            <Button
+                android:id="@+id/btnSimpan"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="SIMPAN"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#1E6FE8"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
